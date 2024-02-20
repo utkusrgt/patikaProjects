@@ -29,7 +29,7 @@ public class manav {
         //let's calculate the sum with a simple arithmetic operation. Basically, product*product price and sum it all together.
 
         double toplam = ((armut * armutfiyat) + (elma * elmafiyat) + (domates * domatesfiyat) + (muz * muzfiyat) + (patlıcan * patlıcanfiyat));
-        System.out.println("Tutar : " + toplam);
+        System.out.println("Toplam Tutar : " + toplam);
 
 
     }
