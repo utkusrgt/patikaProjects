@@ -5,12 +5,7 @@ public class manav {
     public static void main(String[] args) {
         //variables assigned
 
-        double armut, elma, domates, muz, patlıcan;
-        double armutfiyat = 2.14;
-        double elmafiyat = 3.67;
-        double muzfiyat = 0.95;
-        double domatesfiyat = 1.11;
-        double patlıcanfiyat = 5.00;
+        double armut, elma, domates, muz, patlıcan, armutfiyat = 2.14,elmafiyat = 3.67, muzfiyat = 0.95,domatesfiyat = 1.11, patlıcanfiyat = 5.00;
 
         //scanner
 
