@@ -1,0 +1,1 @@
+This programe will calculat the prime numbers between 1-100
