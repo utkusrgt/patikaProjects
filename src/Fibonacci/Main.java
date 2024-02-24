@@ -16,7 +16,7 @@ public class Main {
 
         for (int i = 2; i < elemanSayisi; i++) {
             int nextNumber = firstNumber + secondNumber;
-            System.out.print(", " + nextNumber);
+            System.out.print( ", " + nextNumber );
 
             firstNumber = secondNumber;
             secondNumber = nextNumber;
