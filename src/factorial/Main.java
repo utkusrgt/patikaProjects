@@ -10,9 +10,9 @@ public class Main {
 
         int  n = 1, r = 1, a , b, nMinusr = 1;
 
-        System.out.print("Please enter the number to calculate as factorial : ");
+        System.out.print("Please enter the n  : ");
         a = inp.nextInt();
-        System.out.print("Please enter the number to calculate as factorial : ");
+        System.out.print("Please enter the r : ");
         b = inp.nextInt();
 
         for (int i = 1; i <= a; i++){
@@ -33,7 +33,7 @@ public class Main {
 
         }
 
-        System.out.print( n / (r * nMinusr));
+        System.out.print("Combination C(n,r) is :" + n / (r * nMinusr));
 
     }
 }
