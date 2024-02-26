@@ -3,39 +3,27 @@ package recursivePow;
 import java.util.Scanner;
 
 public class Main {
-
-
-    static int pow(int a, int b) {
-        int result = 1;
-        for (int i = 1; i <= b; i++) {
-
-            result *= a;
-        }
-        return result;
-
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Taban değerini giriniz:");
+        int a = scanner.nextInt();
+        System.out.print("Üs değerini giriniz:");
+        int b = scanner.nextInt();
+        System.out.print("Sonuç: " + power(a, b));
     }
 
-    public static void main(String[] args) {
-
-        Scanner scan = new Scanner(System.in);
-        int select;
-
-
-        while (true){
-
-            System.out.print("Please enter the base number : ");
-            int a = scan.nextInt();
-            System.out.print("Please enter the power number : ");
-            int b = scan.nextInt();
-
-            if (a == 0) {
-                break;
-            }else{
-                System.out.println(a + "^" + b + " is: " + pow(a, b));
-            }
-
-
-
+    public static int power(int a, int b) {
+        if (b == 0) {
+            return 1;
+        } else {
+            return a * power(a, b - 1);
         }
     }
 }
+
+
+// 2^3 = 2 * 2^2
+// 2^2 = 2 * 2^1
+// 2^1 = 2 * 1
+
+
