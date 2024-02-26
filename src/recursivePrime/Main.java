@@ -3,35 +3,43 @@ package recursivePrime;
 import java.util.Scanner;
 
 public class Main {
-
-
-    static boolean isPrime(int a) {
-        if (a <= 1) {
+    static boolean isPrime(int n, int i)
+    {
+        // Base cases
+        if (n <= 2)
+            return (n == 2) ? true : false;
+        if (n % i == 0)
             return false;
-        }
-        for (int i = 2; i < a; i++) {
-            if (a % i == 0) {
-                return false;
-            }
-        }
-        return true;
+        if (i * i > n)
+
+            return true;
+        // Check for next divisor
+        return isPrime(n, i + 1);
     }
 
-    public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
+    public static void main(String[] args)
+    {
 
-        while (true) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Let's see if a number prime or not! \nPlease type " + 0 + " to exit the program! ");
+
+        while(true) {
 
             System.out.print("Please enter a number : ");
-            int a = scan.nextInt();
+            int n = input.nextInt();
 
-            if (isPrime(a)) {
-                System.out.println(a + " is a prime number.");
+            if (isPrime(n, 2))
+            System.out.println("Yes it's a Prime");
+            else
+            System.out.println("Not a Prime");
+
+            if(n == 0){
+                System.out.println("Good day!");
                 break;
-            } else {
-                System.out.println(a + " is not a prime number.");
             }
+
         }
     }
 }
